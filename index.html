@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MadPunk Dev | FW Verification</title>
+    <meta name="description" content="Font Awesome Free icon verification page for MadPunks R&D.">
+    
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #e0e0e0;
+            --sub: #666;
+            --font: 'Courier New', Courier, monospace;
+            --fw-blue: #528bff; 
+            --theme-color: var(--fw-blue);
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: -1px; font-weight: 700; }
+        .title-mad { color: var(--text); }
+        .title-dev { color: var(--theme-color); text-shadow: 0 0 10px rgba(82, 139, 255, 0.3); }
+        .sub-title { font-size: 1.0rem; letter-spacing: 1px; display: block; font-weight: bold; color: var(--sub); }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .preview-box {
+            margin-top: 2rem;
+            padding: 3rem;
+            border: 2px dashed #333;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            transition: all 0.3s;
+        }
+        .preview-box:hover {
+            border-color: var(--theme-color);
+            background: rgba(82, 139, 255, 0.05);
+        }
+
+        .icon-display { width: 128px; height: 128px; }
+        .label { font-size: 0.8rem; color: var(--sub); text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Meta Info Box */
+        .meta-info {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: left;
+            width: 100%;
+            font-size: 0.85rem;
+            border: 1px solid #333;
+        }
+        .meta-row { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+        .meta-key { color: var(--sub); margin-right: 1rem; }
+        .meta-val { color: var(--fw-blue); font-family: monospace; word-break: break-all; }
+        .meta-val a { color: var(--fw-blue); text-decoration: underline; }
+
+        footer { 
+            margin-top: auto; padding-top: 3rem; color: var(--sub); font-size: 0.75rem; 
+            opacity: 0.8; display: flex; flex-direction: column; gap: 0.5rem; 
+            width: 100%; border-top: 1px dotted #333; 
+        }
+        a { color: inherit; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><span class="title-mad">MadPunk</span> <span class="title-dev">FW</span></h1>
+        <span class="sub-title">Font Awesome Free Verification</span>
+    </header>
+
+    <main>
+        <p>&gt; Status: Rendering Check (Renamed to icon.svg)</p>
+
+        <div class="preview-box">
+            <span class="label">Current Icon</span>
+            
+            <img src="./icon.svg" alt="Test Icon" class="icon-display">
+            
+            <div class="meta-info">
+                <div class="meta-row">
+                    <span class="meta-key">Original Name:</span>
+                    <span class="meta-val">flask-solid-full.svg</span> </div>
+                <div class="meta-row">
+                    <span class="meta-key">Source Link:</span>
+                    <span class="meta-val">
+                        <a href="https://fontawesome.com/icons/flask?f=classic&s=solid" target="_blank">View on FontAwesome</a>
+                    </span>
+                </div>
+            </div>
+
+            <span class="label" style="font-size: 0.6rem;">Check browser tab for Favicon</span>
+        </div>
+    </main>
+
+    <footer>
+        <div>&copy; 2026 MadPunk Dev.</div>
+        <div>
+            Icons made by <a href="https://fontawesome.com" target="_blank">Font Awesome</a> 
+            (License: <a href="https://fontawesome.com/license/free" target="_blank">CC BY 4.0</a>)
+        </div>
+    </footer>
+
+</body>
+</html>
